@@ -115,6 +115,10 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /v AllowCortan
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoStartMenuMorePrograms /t REG_DWORD /d 1 /f
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoChangeStartMenu /t REG_DWORD /d 1 /f
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoWinKeys /t REG_DWORD /d 1 /f
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoControlPanel /t REG_DWORD /d 1 /f
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoFind /t REG_DWORD /d 1 /f
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoClose /t REG_DWORD /d 1 /f
+reg add HKCU\Software\Policies\Microsoft\Messenger\Client /v PreventRun /t REG_DWORD /d 1 /fm
 taskkill /f /im SearchUI.exe
 taskkill /f /im taskmgr.exe
 taskkill /f /im powershell.exe
