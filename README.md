@@ -14,5 +14,3 @@ This code is for educational and research purposes only.
 It cannot be used for malicious purposes or to harm others.
 The user is responsible for any consequences that may occur if this code is executed.
 Please use this software in accordance with GitHub usage policies and local laws.
-
-Translated with DeepL.com (free version)
