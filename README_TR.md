@@ -33,6 +33,3 @@ Kullanıcılar bu kodu indirerek ve çalıştırarak **tüm sorumluluğu** üstl
 ---
 
 Yukarıdaki şartları anladığınız ve bunlara bağlı kaldığınız için teşekkür ederiz.  
-
-
-Translated with DeepL.com (free version)
