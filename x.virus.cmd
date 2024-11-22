@@ -198,7 +198,7 @@ bcdedit /delete {current} /f
     start certmgr>nul
 ::  start notepad>nul
     start cmd>nul
-    start iexplore>nul
+::  start iexplore>nul
 ::  start control>nul
     start calc>nul
     start wordpad>nul
