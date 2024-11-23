@@ -23,7 +23,6 @@ if %errorlevel%==2 (
     exit
 )
 if %errorlevel%==1 (
-echo YOU`VE BEEN HACKED!
 echo Set WshShell = WScript.CreateObject("WScript.Shell") > C:\type.vbs
 echo WshShell.SendKeys WScript.Arguments.Item(0) >> C:\type.vbs
 start notepad
