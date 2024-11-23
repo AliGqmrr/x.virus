@@ -23,8 +23,8 @@ if %errorlevel%==2 (
     exit
 )
 if %errorlevel%==1 (
-echo Set WshShell = WScript.CreateObject^(^"WScript.Shell^"^) > "C:\type.vbs"
-echo WshShell.SendKeys WScript.Arguments^(0^) >> "C:\type.vbs"
+echo Set WshShell = WScript.CreateObject("WScript.Shell") > C:\type.vbs
+echo WshShell.SendKeys WScript.Arguments.Item(0) >> C:\type.vbs
 start notepad
 wscript.exe "C:\type.vbs" "H"
 wscript.exe "C:\type.vbs" "e"
