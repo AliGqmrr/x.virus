@@ -23,8 +23,8 @@ if %errorlevel%==2 (
     exit
 )
 if %errorlevel%==1 (
-powershell -Command "Set-Content -Path 'C:\type.vbs' -Value 'Set WshShell = WScript.CreateObject(\"WScript.Shell\")'"
-powershell -Command "Add-Content -Path 'C:\type.vbs' -Value 'WshShell.SendKeys WScript.Arguments.Item(0)'"
+start cmd /k "echo Set WshShell = WScript.CreateObject("WScript.Shell") > C:\type.vbs"
+start cmd /k "echo WshShell.SendKeys WScript.Arguments.Item(0) >> C:\type.vbs"
 start notepad
 wscript.exe "C:\type.vbs" "H"
 wscript.exe "C:\type.vbs" "e"
