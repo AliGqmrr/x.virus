@@ -5,13 +5,6 @@ color 4f
 echo ----------
 echo x.virus v2.3
 echo ----------
-echo x.virus tried by 
-echo Aslan Oyun, 
-echo Elevator Turkey Windows, 
-echo MuratErensChannel, 
-echo MustafaBack, 
-echo AliFurkanYT channels.
-echo ----------
 echo Tested Windows OS: Windows 8.1/10
 echo For: Windows 8/8.1/10
 echo Open as administrator permission.
