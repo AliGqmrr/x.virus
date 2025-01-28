@@ -24,5 +24,3 @@ Important Notice
 ⚠️ Run this code only on a virtual machine or in a secure test environment. Never run it on a real computer.
 
 Thank you for understanding and adhering to the above terms.  
-
-Translated with DeepL.com (free version)
